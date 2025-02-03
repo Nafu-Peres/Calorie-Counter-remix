@@ -1,0 +1,149 @@
+:root {
+    --grey: #333;
+    --black: #000;
+    --offwhite: #ddc;
+    --white: #dfdfdffb;
+    --light-grey: #606060;
+    --green: rgb(77, 120, 77);
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+  }
+  
+
+
+
+
+body {
+  font-family:monospace;
+  font-size: 18px;
+  background-color: var(--offwhite);
+  color: var(--grey);
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 750px;
+}
+  
+h1,
+.container,
+.output {
+  margin: 20px auto;
+}
+
+h1{
+  margin-bottom: 100px;
+  width:800px;
+  text-align: left;
+}
+
+    #fieldset-container{
+      display:flex;
+      justify-content: space-around;
+    }
+
+    #fieldset-container #exercise{
+      margin-left: 50px;
+    }
+
+      fieldset{
+        width:100px;
+        margin: 0 0 10px;
+      }  
+
+      
+        button,
+        label,
+        legend {
+          font-weight: bold;
+        }
+
+        fieldset label{
+          display: block;
+        }
+        
+        .input-container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        
+        input {
+          height: 24px;
+          border:solid 2.3px var(--grey);
+          background-color: var(--white);
+          width:60px;
+        }
+        
+        fieldset input{
+          display: block;
+        }
+
+        button {
+          cursor: pointer;
+          font-family: inherit;
+          text-decoration: none;
+          color:var(--offwhite);
+          background-color: var(--grey);
+          border: 2px solid var(--black);
+          min-height: 24px;
+          margin: 0.2rem;
+        }
+
+        button:active {
+          background-color: var(--light-grey);
+        }
+
+      
+    
+.output {
+  border: 3px solid var(--grey);
+  padding: 10px;
+  background-color: var(--white);
+  text-align: center;
+}
+  
+    .output span {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    
+      .surplus {
+        color: var(--light-pink);
+      }
+      
+      .deficit {
+        color: var(--light-green);
+      }
+
+.big-btn{
+  display: block;
+  font-size: 18px;
+  width:100%;
+  height:2.5em;
+  color:var(--offwhite);
+  background-color: var(--grey);
+}
+
+
+#calculate:hover{
+    background-color: var(--green);
+  }
+
+#clear:hover{
+  background-color: var(--light-grey);
+}
+
+.simple-txt{
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.hide {
+  display: none;
+}

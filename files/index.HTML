@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calorie Counter</title>
+  </head>
+  <body>
+    <main>
+      <h1>Calorie Counter</h1>
+      <div class="container">
+        <form id="calorie-counter">
+          <label for="budget">Budget: </label>                        <!-- budgetInput -->
+          <input                        
+            type="text"
+            min="0"
+            id="budget"
+            required
+          />
+          <p id="totalCalorias"></p>                                  <!-- fieldsets -->
+          <div id="fieldset-container">
+
+            <fieldset id="breakfast">
+              <legend>Breakfast</legend>
+              <button type="button" class="add-input-btn"> + </button>
+            </fieldset>
+
+            <fieldset id="lunch">
+              <legend>Lunch</legend>
+              <button type="button" class="add-input-btn"> + </button>
+            </fieldset>
+
+            <fieldset id="dinner">
+              <legend>Dinner</legend>
+              <button type="button" class="add-input-btn"> + </button>
+            </fieldset>
+
+            <fieldset id="snacks">
+              <legend>Snacks</legend>
+              <button type="button" class="add-input-btn"> + </button>
+            </fieldset>
+            
+            <fieldset id="exercise">
+              <legend>Exercise</legend>                               <!-- fieldset exercise-->
+              <button type="button" class="add-input-btn"> + </button>
+            </fieldset>
+
+          </div>  
+          <div>
+             <button type="submit" class="big-btn" id="calculate">                 <!-- submit -->
+              Calculate Calories
+            </button>
+            <button type="button" class="big-btn" id="clear">Clear</button>
+          </div>
+        </form>
+        <div id="output" class="output hide"></div>
+      </div>
+    </main>
+    <script src="./script.JS"></script>
+  </body>
+</html>
